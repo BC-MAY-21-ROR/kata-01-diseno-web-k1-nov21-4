@@ -394,7 +394,7 @@ i:hover {
   margin-bottom: 25px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .btn-Try-It {
     width: 180px;
     height: 40px;
