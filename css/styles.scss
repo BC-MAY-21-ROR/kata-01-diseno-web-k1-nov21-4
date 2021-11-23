@@ -7,7 +7,9 @@ $grayish-blue:  hsl(208, 11%, 55%);
 $open-sans: 'Open Sans', sans-serif;
 $poppins: 'Poppins', sans-serif;
 
-
+.logo-arriba{
+    height: 18px;
+}
 .logo-bttn{
     display: flex;
     justify-content: space-between;
@@ -75,6 +77,8 @@ body{
     text-align: center;
     font-family: $open-sans;
     font-weight: 400;
+    padding-right: 15px;
+    padding-left:15px;
 }
 .introduction__button_container{
     display:flex;
@@ -93,9 +97,16 @@ body{
     align-items: center;
     padding: 16px 20px;
 }
+
+.introduction__button:hover{
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
 .introduction-img{
     margin-top: 45px;
     height: 210px;
+    margin-bottom: 20px;
 }
 
 .ending__button{
@@ -106,6 +117,12 @@ body{
     height: 40px;
     background-color:$primary-color;
 }
+
+.ending__button:hover{
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
 .advantages{
 display: flex;
 flex-direction: column;
@@ -126,30 +143,35 @@ font-family: $open-sans;
     margin-left: 20px;
     margin-right: 20px;
 }
+
 .card-img{
     margin-top: 55px;
-    margin-bottom: 55px;
+    margin-bottom: 65px;
     height: 190px;
     width: 250px;
 }
 .card-title{
     color: $dark-cyan;
     text-align: center;
-    font-family: $open-sans;
+    font-family: $poppins;
+    font-weight:700;
 }
 .card-text{
     color:$grayish-blue;
     text-align: center;
     font-family: $open-sans;
-    font-weight: 400px;
+    font-weight: 400;
     font-size:14px;
     margin-bottom: 35px;
+    padding-right: 33px;
+    padding-left:33px;
 }
 
 .ending__title{
     color: $dark-cyan;
     text-align: center;
-    font-family: $open-sans;
+    font-family: $poppins;
+    font-weight:700;
     margin-top: 50px;
 }
 .ending{
@@ -172,7 +194,7 @@ font-family: $open-sans;
 }
 .ending-button-text{
     font-family: $poppins;
-    font-weight: 600px;
+    font-weight: 600;
     color: $pale-cyan;
     font-size:10px;
     align-self: center;
@@ -205,6 +227,11 @@ ul{
 
 li{
     margin-top: 25px;
+}
+
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .footer__elements{
@@ -240,6 +267,12 @@ i{
     width:12px;
 }
 
+i:hover{
+    color: $primary-color;
+    cursor: pointer;
+    border: 1px solid $primary-color;
+}
+
 .copy{
     color:#fff;
     display:flex;
@@ -248,8 +281,28 @@ i{
     font-size: 11px;
     margin-bottom: 25px;
 }
-@media(min-width:1200px){
+@media(min-width:1440px){
+    .btn-Try-It{
+        width:180px;
+        height: 40px;
+    }
+
+    .btn-Try-It:hover{
+        cursor: pointer;
+    }
+
+    .btn-Try-It-text:hover{
+        color:rgb(206, 206, 206);
+        cursor: pointer;
+    }
+
+    .logo-arriba{
+        height: 25px;
+    }
     .logo-bttn{
+        margin-top: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
         
     }
     .introduction{
@@ -257,7 +310,8 @@ i{
         justify-content: flex-start;
     }
     .introduction-img{
-        height: 500px;
+        height: 450px;
+        margin-right: 60px;
     }
     .introductiondiv{
         align-items: flex-start;
@@ -267,14 +321,26 @@ i{
     }
     .introduction__paragraph{
         text-align:start;
-        margin-left: 30px;
+        margin-left: 60px;
+        padding-right: 80px;
+        padding-left: 0px;
     }
     .introduction__title{
         text-align: start;
-        margin-left: 30px;
+        margin-left: 60px;
     }
     .introduction__button_container{
-        align-self: center;
+        justify-content:flex-start;
+        margin-left: 60px;
+    }
+
+    .introduction__button{
+        width: 250px;
+        font-size: 12px;
+    }
+
+    .advantages{
+        height: 1590px;
     }
     .card{
         width: 1100px;
@@ -283,10 +349,90 @@ i{
     }
     .card-text{
         margin-left: 100px;
+        padding-left:0px;
+        padding-right: 310px;
+        text-align: start;
+    }
+    .card-text-2{
+        padding-right: 80px;
+    }
+    .card-img{
+        height: 270px;
+        width: 330px;
+        margin-right: 30px;
+        margin-left: -50px;
+    }
+    .card-img-2{
+        order:1;
+        margin-left:80px;
+        margin-right:120px;
     }
     .card-title{
         margin-left: 100px;
         text-align: start;
+        font-weight: 600;
     }
+    .ending-card{
+        width: 750px;
+        height: 220px;
+    }
+
+    .ending__button{
+        height:55px;
+        
+    }
+
+    .ending-button-text{
+        font-size:14px;
+    }
+    
+    .ending__title{
+        font-size: 30px;
+    }
+
+    .copy{
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-right: 60px;
+    }
+
+    .footer-rows{
+        display:flex;
+        flex-direction: row;
+        margin-left: 10px;
+        margin-right:10px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .links-rows{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left:-700px;
+    }
+    .first-ul{
+        margin-right: 100px;
+        margin-left: -100px;
+    }
+    ul{
+        padding-left:0px;
+    }
+    li{
+        font-size: 14px;
+    }
+    .socialNetworks{
+        margin-left:-300px;
+    }
+
+    .footer__elements__text{
+        width: 35%;
+    }
+
+    .logo-abajo-div{
+        width: auto;
+    }
+
+
 
 }
